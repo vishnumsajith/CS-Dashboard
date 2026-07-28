@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enterprise BI Dashboard</title>
 
-    /style.css">
+    css/style.css
 </head>
 <body>
 
@@ -21,67 +18,73 @@
         </div>
     </div>
 
-    <!-- Loading Overlay -->
+    <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="loader"></div>
         <span>Loading Application...</span>
     </div>
 
+    <!-- Main Application -->
     <div id="app" class="app hidden">
 
         <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
+
             <div class="sidebar-header">
                 <h2>BI Suite</h2>
             </div>
 
-            <nav>
+            <nav class="sidebar-nav">
                 <ul>
+
                     <li>
-                        #dashboard="nav-link active">
+                        #dashboard active">
                             Dashboard
                         </a>
                     </li>
 
                     <li>
                         #profile
-                            Profile
-                        </a>
                     </li>
 
                     <li>
                         #settings
                     </li>
+
                 </ul>
             </nav>
+
         </aside>
 
-        <!-- Main Wrapper -->
+        <!-- Main Content Wrapper -->
         <div class="main-wrapper">
 
             <!-- Top Navigation -->
             <header class="topbar">
 
                 <div class="left-section">
-                    <button id="menu-toggle">
+
+                    <button id="menu-toggle" type="button" aria-label="Toggle Navigation">
                         ☰
                     </button>
 
                     <h1>Business Intelligence Dashboard</h1>
+
                 </div>
 
                 <div class="right-section">
 
-                    <button id="theme-toggle">
+                    <button id="theme-toggle" type="button" aria-label="Toggle Theme">
                         🌙
                     </button>
 
                     <div class="user-profile">
+
                         <div class="avatar">
                             U
                         </div>
 
-                        <div>
+                        <div class="user-details">
                             <div class="user-name">
                                 User Name
                             </div>
@@ -90,21 +93,18 @@
                                 Analyst
                             </div>
                         </div>
+
                     </div>
 
                 </div>
 
             </header>
 
-            <!-- Notification Area -->
-            <section id="notifications">
+            <!-- Notifications -->
+            <section id="notifications"></section>
 
-            </section>
-
-            <!-- Dynamic Content -->
-            <main id="content">
-
-            </main>
+            <!-- Dynamic Page Content -->
+            <main id="content"></main>
 
             <!-- Footer -->
             <footer class="footer">
@@ -114,6 +114,7 @@
             </footer>
 
         </div>
+
     </div>
 
     js/helpers.js
@@ -121,5 +122,6 @@
     js/navigation.js
     "></script>
     js/app.js
+
 </body>
 </html>
