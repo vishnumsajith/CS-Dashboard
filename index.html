@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Enterprise BI Dashboard</title>
+
+    /style.css">
+</head>
+<body>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <div class="logo-circle"></div>
+            <h1>Enterprise BI Dashboard</h1>
+            <p>Business Intelligence Platform</p>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <span>Loading Application...</span>
+    </div>
+
+    <div id="app" class="app hidden">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>BI Suite</h2>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        #dashboard="nav-link active">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        #profile
+                            Profile
+                        </a>
+                    </li>
+
+                    <li>
+                        #settings
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Wrapper -->
+        <div class="main-wrapper">
+
+            <!-- Top Navigation -->
+            <header class="topbar">
+
+                <div class="left-section">
+                    <button id="menu-toggle">
+                        ☰
+                    </button>
+
+                    <h1>Business Intelligence Dashboard</h1>
+                </div>
+
+                <div class="right-section">
+
+                    <button id="theme-toggle">
+                        🌙
+                    </button>
+
+                    <div class="user-profile">
+                        <div class="avatar">
+                            U
+                        </div>
+
+                        <div>
+                            <div class="user-name">
+                                User Name
+                            </div>
+
+                            <div class="user-role">
+                                Analyst
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- Notification Area -->
+            <section id="notifications">
+
+            </section>
+
+            <!-- Dynamic Content -->
+            <main id="content">
+
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <span>
+                    Enterprise BI Dashboard • Version 1.0
+                </span>
+            </footer>
+
+        </div>
+    </div>
+
+    js/helpers.js
+    js/theme.js
+    js/navigation.js
+    "></script>
+    js/app.js
+</body>
+</html>
